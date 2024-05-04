@@ -1,0 +1,66 @@
+baseURL: "https://allocate-docs.github.io/"
+languageCode: "en-us"
+
+# Change to true before deploy
+enableGitInfo: false
+
+theme: "docura"
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-US"
+    contentDir: "content/en"
+    title: "Allocate"
+    description: "Uh... tagline"
+    weight: 1
+
+menu:
+  main:
+    - url: "/"
+      name: "Home"
+      identifier: "home"
+
+      # change accordingly
+      pre: "<i class='icon icon-home'></i>" 
+      weight: 1
+
+    - url: "/docs"
+      name: "Documentation"
+      identifier: "docs"
+      pre: "<i class='icon icon-book'></i>" 
+      weight: 2
+
+
+
+params:
+  author:
+    name: "Jordan Clayton"
+    url: "https://jordan-clayton.github.io"
+
+  themeColors:
+      light: "#FFFFFF"
+      light: "#121212"
+
+  years:
+      start: ''
+      present: 2024
+
+  home:
+    repository: "https://github.com/jordan-clayton/allocate"
+
+  # TODO: get algolia API key
+  algolia:
+    en:
+      container: "#site-header-search"
+      appID: ""
+      indexName: ""
+      apiKey: ""
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+

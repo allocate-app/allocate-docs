@@ -1,0 +1,16 @@
+- title: "Documentation"
+  pages:
+    - title: "Overview"
+    - title: "Features"
+
+- title: "Getting Started"
+  pages:
+
+    - title: "Building Allocate"
+    - title: "Installation"
+    - title: "Setup"
+
+- title: "Using Allocate"
+  pages:
+    # TODO: finish
+    - title: "Uhhh stuff"

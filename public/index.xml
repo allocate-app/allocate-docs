@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Allocate</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Allocate</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Allocate</title>
+      <link>http://localhost:1313/docs/building_allocate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/building_allocate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>http://localhost:1313/docs/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/features/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/docs/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/installation/</guid>
+      <description>INPUT SECTIONS LIKE THIS INPUT SUBSECTIONS LIKE THIS </description>
+    </item>
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/overview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/docs/online_sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/online_sync/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
