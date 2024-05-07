@@ -1,8 +1,7 @@
 baseURL: "https://allocate-docs.github.io/"
 languageCode: "en-us"
 
-# Change to true before deploy
-enableGitInfo: false
+enableGitInfo: true 
 
 theme: "docura"
 
@@ -12,8 +11,9 @@ languages:
     languageCode: "en-US"
     contentDir: "content/en"
     title: "Allocate"
-    description: "Uh... tagline"
     weight: 1
+    params:
+      description: "Uh... tagline"
 
 menu:
   main:
