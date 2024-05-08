@@ -22,6 +22,7 @@ MacOS and iOS build targets both require you to build using a Mac. If you do not
   - [Flutter](https://docs.flutter.dev/get-started/install)
   - [Supabase CLI](https://supabase.com/docs/guides/cli/getting-started?queryGroups=platform&platform=npx) (optional: required for online)
   - (MacOS/iOS only) XCode
+  - (Windows only) Visual Studio
 
 ### Database Hosting (Online only)
 
