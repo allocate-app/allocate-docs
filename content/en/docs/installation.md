@@ -170,8 +170,7 @@ allocate\build\windows\runner\Release
 - Follow this [guide](https://medium.com/@fluttergems/packaging-and-distributing-flutter-desktop-apps-the-missing-guide-part-2-windows-0b468d5e9e70):
   - Ignore step 2; the project has already been built
   - You do not need to add a license.txt
-  <!-- TODO: Set this rel-link accordingly: Application pages are not yet finished -->
-  - Licences are accessible via the [settings screen]({{< ref "setup.md" >}}) 
+  - Licences are accessible via the [settings screen]({{< ref "user-settings.md" >}}#about) 
   - Continue up to step 6 to finish installing Allocate 
 
 ### Linux
