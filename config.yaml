@@ -13,7 +13,7 @@ languages:
     title: "Allocate"
     weight: 1
     params:
-      description: "Uh... tagline"
+      description: "Neurodivergent-Friendly Task Management"
 
 menu:
   main:
@@ -38,6 +38,7 @@ params:
     name: "Jordan Clayton"
     url: "https://jordan-clayton.github.io"
 
+
   themeColors:
       light: "#FFFFFF"
       light: "#121212"
@@ -53,8 +54,8 @@ params:
   algolia:
     en:
       container: "#site-header-search"
-      appID: ""
-      indexName: ""
+      appID: "allocate"
+      indexName: "allocate"
       apiKey: ""
 
 markup:

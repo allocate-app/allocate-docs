@@ -1,29 +1,19 @@
 - title: "Documentation"
   pages:
-    - title: "Overview" # Needs copy
-    # Why did I build Allocate
-    # Who is it for?
-    # What can users expect?
-    
-    - title: "Features" # Needs copy
-    # Briefly talk about features: My Day, scaled time, expected functionality from a TODO app
+    - title: "Overview"
+    - title: "Features"
 
 - title: "Getting Started" 
   pages:
-    - title: "Why Do I Have To Build Allocate?" # Needs copy
-    # Basically, I'm po'
-    
+    - title: "Why Do I Have To Build Allocate?"
     - title: "Building Allocate"
     - title: "Installation"
-    # TODO: Change to Setting Up
-    - title: "Setup" # Needs copy
-    # Basic user settings
-    # Signing in
+    - title: "Setting up" 
 
 - title: "Using Allocate"
   pages:
-    - title: "Setting Tasks"
-    - title: "Setting Reminders and Deadlines"
+    - title: "Setting Tasks" 
+    - title: "Setting Reminders and Deadlines" 
     - title: "Setting Routines"
     - title: "Grouping tasks"
     - title: "User Settings"

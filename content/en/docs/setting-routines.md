@@ -14,9 +14,7 @@ Routines can be created from the main Routines screen, or from the [My Day](#dai
 
 Routine energy costs are calculated as a total sum of its component subtasks, like [large and massive tasks]({{< ref setting-tasks.md >}}#energy-costs-and-larger-tasks)
 
-You can set a [daily routine](#daily-routines) directly from the routine creation/routine editing screens by hitting the main icon
-
-[My Day tasks.]({{< ref setting-tasks.md >}}#my-day)
+You can set a [daily routine](#daily-routines) directly from the routine creation/routine editing screens by hitting the main icon:
 
 ## Daily Routines
 

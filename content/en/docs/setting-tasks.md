@@ -19,7 +19,7 @@ Or via the tasks screen:
 <!-- image here: tasks scrn -->
 ---
 
-## Energy costs and Larger Tasks
+## Energy Costs and Larger Tasks
 
 For small tasks, use the weight slider to set the energy cost:
 

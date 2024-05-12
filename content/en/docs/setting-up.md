@@ -21,7 +21,7 @@ Click the name tile to change the default name to one of your choosing. If you s
 
 ## Setting Your Limits
 
-Allocate's core features rely on a concept of "bandwidth," inspired by [Spoon theory](https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/). Here, "bandwidth" refers to a discrete, finite reserve that represents your total energy and ability to do things such as accomplish tasks or socialize. Allocate encourages you to add weighted costs to your tasks; when these tasks are added to [your day]({{< ref setting-tasks.md >}}#my-day), your reserve depletes accordingly.
+Allocate's core features rely on a concept of "bandwidth," inspired by [Spoon Theory](https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/). Here, "bandwidth" refers to a discrete, finite reserve that represents your total energy and ability to do things such as accomplish tasks or socialize. Allocate encourages you to add weighted costs to your tasks; when these tasks are added to [your day]({{< ref setting-tasks.md >}}#my-day), your reserve depletes accordingly.
 
 - In the settings screen, use the slider to set your Bandwidth anywhere from 0-200
 
