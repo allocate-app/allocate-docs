@@ -12,4 +12,4 @@ Allocate is a free and open source application maintained by one person, whom at
 
 *The project is intended to be accessible and there are currently no plans to monetize Allocate.*
 
-If you would like to support the project financially, please notify [the author](mailto:jordan.clayton@torontomu.ca) so that they may set up an appropriate donation channel. With enough resources, Allocate can be distributed via official software channels.
+If you would like to support the project financially, please notify [the author](mailto:jordan.clayton@torontomu.ca) so that they may set up an appropriate donation channel. With sufficient resources, Allocate can be distributed via official software sources.

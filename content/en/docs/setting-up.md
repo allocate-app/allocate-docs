@@ -7,8 +7,7 @@ alias:
 
 Once you've built and installed Allocate, the application is ready to use from first launch. When you open the application for the first time, you will be greeted with the main screen and a user profile will be set up with default settings.
 
-<!-- image here -->
---- 
+![allocate main screen desktop layout with left sidebar opened](images/main_scrn_desktop.jpg)
 
 To get the most of what Allocate has to offer, you should take a little time to personalize your user account.
 
@@ -16,8 +15,7 @@ To get the most of what Allocate has to offer, you should take a little time to 
 
 Click the name tile to change the default name to one of your choosing. If you set up online sync, your email will also be shown.
 
-<!-- image here -->
---- 
+![allocate settings screen desktop layout with left sidebar opened](images/account_name_desktop.jpg)
 
 ## Setting Your Limits
 
@@ -25,8 +23,7 @@ Allocate's core features rely on a concept of "bandwidth," inspired by [Spoon Th
 
 - In the settings screen, use the slider to set your Bandwidth anywhere from 0-200
 
-<!-- image here -->
---- 
+![allocate settings screen using slider](images/weight_slider_desktop.jpg)
 
 ## Signing In
 
@@ -39,5 +36,4 @@ On first sign in, Allocate will upload all of you local data and periodically sy
 
 - Use the main action button to manually refresh data
 
-<!-- image here -->
----
+![allocate sign-in dialog](images/sign_in_desktop.jpg)

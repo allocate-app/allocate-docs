@@ -8,8 +8,6 @@ aliases:
 
 ## Account settings
 
-<!-- image here: uh, account tile -->
----
 - For handling signing in, online sync, and changing emails
 - Deleting your account will delete all locally stored data as well as your online account
 - It is possible to switch to a different user account created on another device
@@ -20,10 +18,8 @@ aliases:
 - *Fast user switching and multiple accounts*
 - *Deleteing locally stored data when linked with an online account*
 
-## General Settings
 
-<!-- image here: toggles -->
----
+## General Settings
 
 - Ask before closing:
     - When closing a create screen, prompts the user to ensure they wish to discard the draft
@@ -32,11 +28,9 @@ aliases:
     - To save on database space, Allocate will clear out the trash regularly
     - Set to forever to manually control when deleted items are permanently removed
 
+![allocate settings screen mobile view showing total energy capacity with slider](images/settings_screen_mobile.jpg)
 
 ## Accessibility Settings
-
-<!-- image here: toggles -->
----
 
 - Reduce motion removes primary transition animations 
     - Animations have not been fully removed
@@ -45,22 +39,15 @@ aliases:
 
 ## Theme
 
-<!-- image here -->
----
-
 - Switch between light/dark themes
 - Set primary and accent colours
 - Change tonemapping to alter UI palette harmonies
 - (Desktop only) Window effect: set transparent and glassmorphic windows
 - (Desktop, transparent mode only) Sidebar/Window opacity
 
-<!-- image here: tonemapping, macos-->
----
+![allocate settings screen macos with windows settings dropdown opened](images/window_effect_settings.jpg)
 
 ## About
 
 - General app information and licenses
-
-<!-- image here: about section -->
----
 
