@@ -1,7 +1,16 @@
-baseURL: "https://allocate-docs.github.io/"
+---
+baseURL: "https://jordan-clayton.github.io/allocate-docs"
 languageCode: "en-us"
 
-enableGitInfo: true 
+enableGitInfo: true
+
+module:
+  mounts:
+    - source: "assets"
+      target: "assets"
+
+    - source: "static"
+      target: "assets"
 
 theme: "docura"
 
@@ -41,7 +50,7 @@ params:
 
   themeColors:
       light: "#FFFFFF"
-      light: "#121212"
+      dark: "#121212"
 
   years:
       start: ''
@@ -50,13 +59,20 @@ params:
   home:
     repository: "https://github.com/jordan-clayton/allocate"
 
-  # TODO: get algolia API key
   algolia:
     en:
+    # For docura
       container: "#site-header-search"
-      appID: "allocate"
-      indexName: "allocate"
-      apiKey: ""
+      appID: "CNK71ZG9VQ"
+      indexName: "allocate-docs"
+      apiKey: "9ffd9aeab725f6394142cc30a355cb2b"
+
+
+# for Hugo-Algolia
+algolia:
+  index: "allocate-docs"
+  key: "9ffd9aeab725f6394142cc30a355cb2b"
+  appID: "CNK71ZG9VQ"
 
 markup:
   highlight:
@@ -64,4 +80,4 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
+---

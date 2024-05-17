@@ -1,7 +1,5 @@
 ---
 title: "Building Allocate"
-# I don't understand why I cannot change the slug.
-# This also needs to be here or the page will not generate
 slug: "building-allocate"
 aliases:
 - "/build"
@@ -138,7 +136,7 @@ flutter doctor -v
   - Set up the edge function __(Windows CMD):__
 
   ```cmd
-  robocopy .\supabase_config\functions .\supabase\ /e 
+  robocopy .\supabase_config\functions .\supabase\ /E 
   ```
 
   - (Alternatively, copy the functions folder to the local supabase folder using your file explorer)
