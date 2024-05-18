@@ -50,7 +50,9 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Update Modules
-        run: hugo mod init && hugo mod get -u
+        run: |
+          hugo mod init github.com/jordan-clayton/allocate-docs
+          && hugo mod get -u
       - name: Print Hugo Modules
         run: hugo mod graph
       - name: Build with Hugo
