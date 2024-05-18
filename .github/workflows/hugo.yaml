@@ -1,3 +1,4 @@
+# See: https://github.com/gohugoio/hugo/issues/11458, hugo bug prevents initializing module
 name: Deploy Hugo site to Pages
 
 on:

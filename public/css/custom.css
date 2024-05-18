@@ -1,0 +1,10 @@
+#article-content img,
+#article-content video {
+  max-height: 35rem
+}
+
+.cover h1,
+.cover h2,
+#site-header-brand{
+  font-family: 'fira mono', 'sans-serif'
+}
