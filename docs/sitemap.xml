@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2024-05-17T19:13:55-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/building-allocate/</loc>
+    <loc>/docs/building-allocate/</loc>
     <lastmod>2024-05-17T19:13:55-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2024-05-17T19:13:55-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/features/</loc>
+    <loc>/docs/features/</loc>
     <lastmod>2024-05-11T21:58:04-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/grouping-tasks/</loc>
+    <loc>/docs/grouping-tasks/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/installation/</loc>
+    <loc>/docs/installation/</loc>
     <lastmod>2024-05-10T01:13:03-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/overview/</loc>
+    <loc>/docs/overview/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/setting-reminders-and-deadlines/</loc>
+    <loc>/docs/setting-reminders-and-deadlines/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/setting-routines/</loc>
+    <loc>/docs/setting-routines/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/setting-tasks/</loc>
+    <loc>/docs/setting-tasks/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/setting-up/</loc>
+    <loc>/docs/setting-up/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
   </url><url>
-    <loc>//localhost:1313/docs/user-settings/</loc>
+    <loc>/docs/user-settings/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/why-do-i-have-to-build-allocate/</loc>
+    <loc>/docs/why-do-i-have-to-build-allocate/</loc>
     <lastmod>2024-05-14T23:17:08-04:00</lastmod>
   </url>
 </urlset>
