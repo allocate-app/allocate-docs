@@ -49,10 +49,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Initialize Module
+        run: hugo mod init github.com/jordan-clayton/allocate-docs
       - name: Update Modules
-        run: |
-          hugo mod init github.com/jordan-clayton/allocate-docs
-          && hugo mod get -u
+        run: hugo mod get -u
       - name: Print Hugo Modules
         run: hugo mod graph
       - name: Build with Hugo
