@@ -23,6 +23,8 @@ languages:
     params:
       description: "Neurodivergent-Friendly Task Management"
 
+publishDir: "docs"
+
 menu:
   main:
     - url: "/"

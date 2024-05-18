@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Allocate</title>
+    <link>/</link>
+    <description>Recent content on Allocate</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Allocate</title>
+      <link>/docs/building-allocate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/building-allocate/</guid>
+      <description>Prerequisites This guide assumes you have a basic understanding of the command line.&#xA;Allocate has been designed using Supabase for its online storage. If you would prefer an alternative, you will need to modify and build the project accordingly. These instructions only apply to using Supabase. For offline-only use, see Building (Offline).&#xA;MacOS and iOS build targets both require you to build using a Mac. If you do not have access to Apple hardware, consider using a cloud service like codemagic.</description>
+    </item>
+    <item>
+      <title>Features</title>
+      <link>/docs/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/features/</guid>
+      <description>Energy Limits Allocate adapts Spoon Theory into an energy system with reserves and costs&#xA;Users can set and modify their own daily energy total, which acts as a currency for routines and tasks Individual tasks allow you to attach an associated cost to represent the overall strain required to complete&#xA;This cost is used in estimating the amount of extra time a task will take, as well as deplete from your total energy Clearly defined visual feedback for changes in energy helps you gauge how much activity you can healthily take on When reaching or exceeding your daily energy limits, Allocate prevents you from adding more work to your day with a gentle reminder to focus on yourself.</description>
+    </item>
+    <item>
+      <title>Grouping Tasks</title>
+      <link>/docs/grouping-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/grouping-tasks/</guid>
+      <description>Groups are a way to organize collections of related tasks to make them easier to find and quicker to access.&#xA;Quick View Use the quick view in the main navigation drawer to access your most recently updated groups, add a new group, or see a list of all created groups.&#xA;Creating a Group Groups can be created from the groups screen, or from the quickview. Add and remove tasks accordingly here, create new tasks, and search for existing tasks.</description>
+    </item>
+    <item>
+      <title>Installation</title>
+      <link>/docs/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/installation/</guid>
+      <description>Packaging Due to the required post-build configurations, it is not possible to automate the process of packaging Allocate for installation on your device. This page contains instructions for how to do so for your desired target operating system. Depending on your target the packaging (and installation) process can be a little tedious, but it should be relatively straightforward.&#xA;A few notes for Apple operating systems:&#xA;Packaging for iOS/MacOS will require you to have, at least, a free developer account If you have a paid developer account, consider following this iOS guide / this MacOS guide These MacOS/iOS instructions assume you have a free developer account A few notes for Linux:</description>
+    </item>
+    <item>
+      <title>Overview</title>
+      <link>/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/overview/</guid>
+      <description>What is Allocate? Allocate is a task-managing application designed for neurodivergent folk with a goal of achieving healthier work habits and alleviating burnout. Instead of focusing on maximizing productivity by managing tasks, Allocate focuses on managing your energy reserves to prevent you from overworking.&#xA;Why? Typical task-managing applications fail to address the fact that individuals have varying levels of ability and energy to accomplish things within a given day. Working beyond your limits for prolonged periods of time to meet unreachable productivity goals is unsustainable.</description>
+    </item>
+    <item>
+      <title>Setting Reminders and Deadlines</title>
+      <link>/docs/setting-reminders-and-deadlines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/setting-reminders-and-deadlines/</guid>
+      <description>Setting Reminders Reminders are designed to be short notifications to help you keep track of what you need to remember.&#xA;These require a due-date and time to be able to send you a notification to your devices Setting Deadlines Like reminders, deadlines are designed to help you keep track of important things to remember. Deadlines also allow you to set a specific warning date to schedule a notification in advance of a due date.</description>
+    </item>
+    <item>
+      <title>Setting Routines</title>
+      <link>/docs/setting-routines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/setting-routines/</guid>
+      <description>Creating a new Routine Routines can be created from the main Routines screen, or from the My Day screen.&#xA;Routine energy costs are calculated as a total sum of its component subtasks, like large and massive tasks&#xA;You can set a daily routine directly from the routine creation/routine editing screens by hitting the main icon:&#xA;Daily Routines You can set your primary routines from the My Day screen. Each of these will reset their progress at midnight (local time).</description>
+    </item>
+    <item>
+      <title>Setting Tasks</title>
+      <link>/docs/setting-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/setting-tasks/</guid>
+      <description>Creating New Tasks Create a new task via the action button or the tasks screen:&#xA;Energy Costs and Larger Tasks For small tasks, use the weight slider to set the energy cost:&#xA;Larger task costs are determined by the total sum cost of its subtasks:&#xA;The amount of energy required to do a given task also affects how long it will take. Tasks which are particularly unpleasant, strenuous, or overstimulating often require more time than anticipated.</description>
+    </item>
+    <item>
+      <title>Setting Up</title>
+      <link>/docs/setting-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/setting-up/</guid>
+      <description>Once you&amp;rsquo;ve built and installed Allocate, the application is ready to use from first launch. When you open the application for the first time, you will be greeted with the main screen and a user profile will be set up with default settings.&#xA;To get the most of what Allocate has to offer, you should take a little time to personalize your user account.&#xA;Your Account Name Click the name tile to change the default name to one of your choosing.</description>
+    </item>
+    <item>
+      <title>User Settings</title>
+      <link>/docs/user-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/user-settings/</guid>
+      <description>Account settings For handling signing in, online sync, and changing emails Deleting your account will delete all locally stored data as well as your online account It is possible to switch to a different user account created on another device This will clear and replace the current local database Planned Features Support for creating multiple accounts Fast user switching and multiple accounts Deleteing locally stored data when linked with an online account General Settings Ask before closing:</description>
+    </item>
+    <item>
+      <title>Why Do I Have To Build Allocate?</title>
+      <link>/docs/why-do-i-have-to-build-allocate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/why-do-i-have-to-build-allocate/</guid>
+      <description>To put it simply, financial cost.&#xA;Allocate is a free and open source application maintained by one person, whom at this time cannot afford the costs involved to scale and distribute the application. Building the application from source ensures that those who wish to use Allocate have sufficient database space to meet their needs.&#xA;The project is intended to be accessible and there are currently no plans to monetize Allocate.</description>
+    </item>
+  </channel>
+</rss>
