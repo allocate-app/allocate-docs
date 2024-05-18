@@ -1,6 +1,8 @@
 ---
 title: "Overview"
 slug: "overview"
+aliases:
+- "/docs"
 ---
 
 ## What is Allocate?

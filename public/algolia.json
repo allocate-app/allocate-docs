@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Building Allocate",
+        "uri": "en/docs/building-allocate",
+        "content": "Prerequisites guide assumes basic understanding command line  Allocate designed using Supabase its online storage  prefer alternative  will need modify build project accordingly  instructions apply using Supabase  offline only use  Building  Offline   MacOS iOS build targets require build using Mac  not access Apple hardware  consider using cloud service codemagic  Note  codemagic requires paid Apple developer account assumes will deploying app App store  paid Apple Developer ID not required build install Allocate  See  Installation Build Tools Flutter Supabase CLI  optional  required online   MacOS iOS only  XCode  Windows only  Visual Studio Database Hosting  Online only  Supabase Dependencies Flutter Install Flutter sdk operating system required development tools  eg  XCode  Android Studio  Ensure flutter added PATH Verify using  flutter doctor  v Supabase Set new Supabase project configure Authentication follows  Set Site URL io allocate   login  the slug doesn t matter  deeplink URI  Configure following Email templates  Confirm signup  Magic link  Change Email Address templates include     Token     Allocate uses 6 digit OTP confirm sign in up email changes Configure Email Auth provider setting following  Enable Email Provider Confirm Email Email OTP Length  6  Optional  Email OTP Expiration Open SQL Editor  Copy schema sql supabase _config folder editor run code Keep Supabase URL  Supabase Annon Key  database password handy Supabase CLI Install Supabase CLI install using npm bun  will need build manually set shell alias Otherwise  feel free use build _allocate script operating system Allocate Project Clone download Allocate   unzip downloaded  Building Online Navigate allocate project folder Open build allocate sh  MacOS Linux  build allocate cmd  Windows  basic text editor complete following fields  supabase _url  your url goes here  supabase annon key  your key goes here  target _os  your target os   macos windows apk ios etc   Build manually open command line directory run   build sh  WINDOWS   build cmd script assumes Supabase CLI run without prefix  eg  npx bunx  Follow prompts accordingly link supabase will need provide database password Offline Install flutter Download Allocate Navigate allocate project folder Open build allocate sh  MacOS Linux  build allocate cmd  Windows  basic text editor complete following fields  offline _only  true  target _os  your target os   macos windows apk ios etc   Build manually open command line directory run   build sh  WINDOWS   build cmd will need rebuild project Supabase database want able sync online Building manually Open command prompt  navigate allocate directory input following commands  dependencies  flutter pub clean flutter pub Regenerate build graph generate asset files  dart run build_runner build   Enter 1 prompted re generate files dart run icons_launcher create dart run flutternativesplash create building offline only  flutter build  your os target here    release   dart define OFFLINE true Otherwise  build online  flutter build  your os target here    release   dart define SUPABASEURL  your supabase url    dart define SUPABASEANNON_KEY  your supabase key  Configure Supabase CLI  required online   supabase login supabase init supabase link Set edge function  MacOS Linux   cp  r supabase_config functions supabase  Set edge function  Windows CMD   robocopy   supabase_config functions   supabase   E  Alternatively  copy functions folder local supabase folder using file explorer  Deploy edge function Supabase  supabase functions deploy deleteuseraccount Finish successfully building Allocate  application  build libraries  data will located build your os target  folder  point  few steps required package install Allocate",
+        "objectID": "en/docs/building-allocate",
+        "slug": "building-allocate",
+        "aliases": [
+            "/build"
+        ]
+    },
+    {
+        "title": "Features",
+        "uri": "en/docs/features",
+        "content": "Energy Limits Allocate adapts Spoon Theory energy system reserves costs Users set modify own daily energy total  acts currency routines tasks Individual tasks allow attach associated cost represent overall strain required complete cost used estimating amount extra time task will take  deplete total energy Clearly defined visual feedback changes energy helps gauge activity healthily When reaching exceeding daily energy limits  Allocate prevents adding work day gentle reminder focus yourself  Task Management Features Offline first database design  Allocate lets keep track day without need internet connection Optional online accounts let keep data synchronized across devices Cross Platform support  Allocate built iOS  Android  MacOS  Windows  Linux Support recurring tasks  reminders  deadlines Notifications due dates Task groups",
+        "objectID": "en/docs/features",
+        "slug": "features",
+        "aliases": [
+            "/features"
+        ]
+    },
+    {
+        "title": "Grouping Tasks",
+        "uri": "en/docs/grouping-tasks",
+        "content": "Groups organize collections related tasks easier find quicker access  Quick View Use quick view main navigation drawer access recently updated groups  add new group  list created groups  Creating Group Groups created groups screen  quickview  Add remove tasks accordingly here  create new tasks  search existing tasks  Important note Removing task group does not delete task Tasks reordered relative one another  completed tasks grouped separately",
+        "objectID": "en/docs/grouping-tasks",
+        "slug": "grouping-tasks",
+        "aliases": [
+            "/group",
+            "/groups",
+            "/grouping"
+        ]
+    },
+    {
+        "title": "Installation",
+        "uri": "en/docs/installation",
+        "content": "Packaging Due required post build configurations  not possible automate process packaging Allocate installation device  page contains instructions so desired target operating system  Depending target packaging  and installation  process little tedious  relatively straightforward  few notes Apple operating systems  Packaging iOS MacOS will require have  least  free developer account paid developer account  consider following iOS guide   MacOS guide MacOS iOS instructions assume free developer account few notes Linux  Given myriad available distributions  beyond scope guide cover packaging installation every distro guide tries agnostic possible  mainly assumes running Debian one its derivatives may need search equivalent dependencies dislike AppImages suggested alternative guides follow need seek build package package manager not required package install Allocate  generally convenient possible copy bundle location computer run Allocate folder sample  desktop file use run Allocate launcher Android No extra packaging required apk will located at  allocate build app outputs bundle release allocate apk Proceed installing iOS Open XCode project  Open terminal app navigate allocate folder cd path to allocate open ios Runner xcworkspace not code signing identity  create one  Ensure certificate active  Finder Bar  XCode  Preferences    Accounts certificate not active  select Manage Certificates    generate new certificate Build Settings Select Runner left navigator drawer Select Runner Project ensure iOS Deployment target set iOS 12 0 greater Select Runner Target  General tab  ensure minimum deployment set iOS 12 0 greater Verify identity follows  App Category  Productivity Display Name  Allocate bundle identifier  com jordan allocate Signing Signing   Capabilities tab  set  Automatically manage signing  team personal team Verify bundle identifier com jordan allocate Packaging IPA Finder bar  Product  Clean Build Folder    Product  Build Running When project finished building   Finder Bar  Product  Show Build Folder Finder Build folder  Navigate to  Products Release iphoneos Copy Runner app location Mac  eg  home folder  Documents  etc   Open finder window navigate copied Runner app folder called  Payload   case sensitive  Place Runner app within newly created  Payload  folder Right click  Payload   or highlight open context menu  compress  zip Rename Payload zip Allocate ipa Proceed installing MacOS Open XCode project  Open terminal app navigate allocate folder cd path to allocate open macos Runner xcworkspace not code signing identity  create one  Ensure certificate active  XCode  Preferences    Accounts certificate not active  select Manage Certificates    generate new certificate Build Settings Select Runner left navigator drawer Select Runner Project  Select info tab  ensure minimum MacOS target set MacOS 10 15 greater Select Build Settings tab  Build Options  set User Script Sandboxing NO Select Runner target  general tab  ensure minimum MacOS target set MacOS 10 15 greater Verify identity follows  App Category  Productivity Display Name  Allocate bundle identifier  com jordan allocate Signing Signing   Capabilities tab  set Signing  Release   Automatically manage signing  team personal team Verify bundle identifier com jordan allocate Set Signing Certificate Development Packaging AppBundle Finder bar  Product  Scheme  Edit Scheme  Select Run tab set following  Build Configuration  Release Executable  Allocate app Turn off Debug executable Product  Clean Build Folder    Product  Build Running When project finished building  Product  Show Build Folder Finder Allocate app will located in  Products Release  point  package Allocate app  dmg using Disk Utility alternative not necessary installation distribution  freely send Allocate app whomever wish Proceed installation Windows Download install inno setup executable  data  required  dll files will located at  allocate build windows runner Release Follow guide  Ignore step 2  project already built not need add license txt Licences accessible via settings screen Continue step 6 finish installing Allocate Linux Allocate binary will located at  allocate build linux x64 release bundle Depending system libraries already installed  require install few dependencies Determine running following  ldd build linux x64 release bundle allocate cd build linux x64 release bundle  ldd allocate missing required libraries  install via package manager Packaging Linux Dependencies Allocate relies following external dependencies  debian   may named differently distribution libgtk 3 0 libayatana appindicator3 1 libc6 i386 libc6 libcap2 libgcrypt20 libglib2 0 dev libjpeg turbo8 liblz4 1 liblzma5 libstdc  6 libzstd1 know package distribution  feel free skip section  and install instructions  Icon assets located assets folder use fit Alternatively  guide will show build  deb  rpm builds using flutter _distributor use flutter _distributor will need add following  build args distribute _options yaml dependencies make _config yaml assets allocatelogo png application icon  recommended  Online build args  build_ar",
+        "objectID": "en/docs/installation",
+        "slug": "installation",
+        "aliases": [
+            "/install"
+        ]
+    },
+    {
+        "title": "Overview",
+        "uri": "en/docs/overview",
+        "content": "Allocate  Allocate task managing application designed neurodivergent folk goal achieving healthier work habits alleviating burnout  Instead focusing maximizing productivity managing tasks  Allocate focuses managing energy reserves prevent overworking  Why  Typical task managing applications fail address fact individuals varying levels ability energy accomplish things within given day  Working beyond limits prolonged periods time meet unreachable productivity goals unsustainable",
+        "objectID": "en/docs/overview",
+        "slug": "overview"
+    },
+    {
+        "title": "Setting Reminders and Deadlines",
+        "uri": "en/docs/setting-reminders",
+        "content": "Setting Reminders Reminders designed short notifications help keep track need remember  require due date time able send notification devices Setting Deadlines reminders  deadlines designed help keep track important things remember  Deadlines allow set specific warning date schedule notification advance due date  reminders deadlines will show calendar  set repeat schedule",
+        "objectID": "en/docs/setting-reminders",
+        "slug": "setting-reminders-and-deadlines",
+        "aliases": [
+            "/reminders",
+            "/deadlines"
+        ]
+    },
+    {
+        "title": "Setting Routines",
+        "uri": "en/docs/setting-routines",
+        "content": "Creating new Routine Routines created main Routines screen  Day screen  Routine energy costs calculated total sum its component subtasks  large massive tasks set daily routine directly routine creation routine editing screens hitting main icon  Daily Routines set primary routines Day screen  will reset progress midnight  local time   energy costs accumulated Day total costs  unset routines  search exisiting routine set  create new one dropdown menu",
+        "objectID": "en/docs/setting-routines",
+        "slug": "setting-routines",
+        "aliases": [
+            "/routines"
+        ]
+    },
+    {
+        "title": "Setting Tasks",
+        "uri": "en/docs/setting-tasks",
+        "content": "Creating New Tasks Create new task via action button tasks screen  Energy Costs Larger Tasks small tasks  use weight slider set energy cost  Larger task costs determined total sum cost its subtasks  amount energy required given task affects long will take  Tasks particularly unpleasant  strenuous  overstimulating often require time anticipated  include expected time estimate tasks routines  Allocate will use energy costs readjust time estimate accommodate extra difficulty not always accurate  provides upper limit allow plan day accordingly Repeating tasks Tasks start end date set repeat daily  weekly  custom schedule  will appear calendar  alongside deadlines reminders Day day focused tasks  daily routines  calendar upcoming events  daily routines tasks added day will deplete total energy reserves  try exceed limit do  Allocate will prevent adding new tasks help avoid overloading",
+        "objectID": "en/docs/setting-tasks",
+        "slug": "setting-tasks",
+        "aliases": [
+            "/tasks"
+        ]
+    },
+    {
+        "title": "Setting Up",
+        "uri": "en/docs/setting-up",
+        "content": "Once you ve built installed Allocate  application ready use first launch  When open application first time  will greeted main screen user profile will set default settings  Allocate offer  little time personalize user account  Account Name Click name tile change default name one choosing  set online sync  email will shown  Setting Limits Allocate s core features rely concept  bandwidth   inspired Spoon Theory  Here   bandwidth  refers discrete  finite reserve represents total energy ability things accomplish tasks socialize  Allocate encourages add weighted costs tasks  when tasks added day  reserve depletes accordingly  settings screen  use slider set Bandwidth anywhere 0 200 Signing built Allocate online support want sign sync data  account section  select  Sign cloud backup  Enter email request 6 digit OTP Enter OTP wait Allocate sign first sign in  Allocate will upload local data periodically sync ensure data consistent across devices  Use main action button manually refresh data",
+        "objectID": "en/docs/setting-up",
+        "slug": "setting-up",
+        "alias": [
+            "/setup"
+        ]
+    },
+    {
+        "title": "User Settings",
+        "uri": "en/docs/user-settings",
+        "content": "Account settings handling signing in  online sync  changing emails Deleting account will delete locally stored data online account possible switch different user account created device will clear replace current local database Planned Features Support creating multiple accounts Fast user switching multiple accounts Deleteing locally stored data when linked online account General Settings Ask closing  When closing create screen  prompts user ensure wish discard draft Keep deleted items  save database space  Allocate will clear trash regularly Set forever manually control when deleted items permanently removed Accessibility Settings Reduce motion removes primary transition animations Animations not fully removed Ultra contrast will affect devices high contrast enabled accessibility settings Users manually set high ultra high contrast tonemapping theme section Theme Switch light dark themes Set primary accent colours Change tonemapping alter UI palette harmonies  Desktop only  Window effect  set transparent glassmorphic windows  Desktop  transparent mode only  Sidebar Window opacity General app information licenses",
+        "objectID": "en/docs/user-settings",
+        "slug": "user-settings",
+        "aliases": [
+            "/user",
+            "/settings"
+        ]
+    },
+    {
+        "title": "Why Do I Have To Build Allocate?",
+        "uri": "en/docs/why-build",
+        "content": "put simply  financial cost  Allocate free open source application maintained one person  whom time cannot afford costs involved scale distribute application  Building application source ensures wish use Allocate sufficient database space meet needs  project intended accessible currently no plans monetize Allocate  support project financially  please notify author so may set appropriate donation channel  sufficient resources  Allocate distributed via official software sources",
+        "objectID": "en/docs/why-build",
+        "slug": "why-do-i-have-to-build-allocate",
+        "aliases": [
+            "/why",
+            "/why-build"
+        ]
+    }
+]

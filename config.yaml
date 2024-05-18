@@ -27,8 +27,6 @@ menu:
     - url: "/"
       name: "Home"
       identifier: "home"
-
-      # change accordingly
       pre: "<i class='icon icon-home'></i>" 
       weight: 1
 
