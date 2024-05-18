@@ -1,6 +1,6 @@
 ---
 languageCode: "en-us"
-
+reulativeUrls: true
 enableGitInfo: true
 
 module:
@@ -35,7 +35,7 @@ menu:
       pre: "<i class='icon icon-home'></i>" 
       weight: 1
 
-    - url: "/docs"
+    - url: "docs/"
       name: "Documentation"
       identifier: "docs"
       pre: "<i class='icon icon-book'></i>" 

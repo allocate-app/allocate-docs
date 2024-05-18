@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Neurodivergent-Friendly Task Management">
+<meta name="author" content="Jordan Clayton">
+
+<title>Installation · Allocate</title>
+
+<link rel="canonical" href="//localhost:1313/docs/installation/">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/base.css" integrity="">
+
+
+
+<link rel="stylesheet" href="/scss/theme/default.css" integrity="">
+
+
+
+  <link rel="preconnect" href="https://CNK71ZG9VQ-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/scss/component/docsearch.css" integrity=""/>
+
+
+<link rel="stylesheet" href="//localhost:1313/css/custom.css">
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+</script>
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">Allocate</a>
+  </div>
+
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
+        <i class="icon icon-translate"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        
+          <li role="menuitem"><a href="#">English</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="docs/"  class="active"><i class='icon icon-book'></i>Documentation</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">Documentation</strong>
+          
+          <a class="sidebar-link " href="/docs/overview/">
+            
+              Overview
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/features/">
+            
+              Features
+            
+          </a>
+
+        <strong class="sidebar-section">Getting Started</strong>
+          
+          <a class="sidebar-link " href="/docs/why-do-i-have-to-build-allocate/">
+            
+              Why Do I Have To Build Allocate?
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/building-allocate/">
+            
+              Building Allocate
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link current" href="/docs/installation/">
+            
+              Installation
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/setting-up/">
+            
+              Setting up
+            
+          </a>
+
+        <strong class="sidebar-section">Using Allocate</strong>
+          
+          <a class="sidebar-link " href="/docs/setting-tasks/">
+            
+              Setting Tasks
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/setting-reminders-and-deadlines/">
+            
+              Setting Reminders and Deadlines
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/setting-routines/">
+            
+              Setting Routines
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/grouping-tasks/">
+            
+              Grouping tasks
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/user-settings/">
+            
+              User Settings
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> On this section</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Installation</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <h2 id="packaging">Packaging</h2>
+<p>Due to the required post-build configurations, it is not possible to automate the process of packaging Allocate for installation on your device.
+This page contains instructions for how to do so for your desired target operating system. Depending on your target the packaging (and installation) process can be a little tedious, but it should be relatively straightforward.</p>
+<p>A few notes for Apple operating systems:</p>
+<ul>
+<li>Packaging for iOS/MacOS will require you to have, at least, a free <a href="https://developer.apple.com/support/compare-memberships/" target="_blank">developer account</a></li>
+<li>If you have a paid <a href="https://developer.apple.com/support/compare-memberships/">developer account</a>, consider following <a href="https://docs.flutter.dev/deployment/ios">this iOS guide</a> / <a href="https://docs.flutter.dev/deployment/macos" target="_blank">this MacOS guide</a></li>
+<li><em>These MacOS/iOS instructions assume you have a free developer account</em></li>
+</ul>
+<p>A few notes for Linux:</p>
+<ul>
+<li>Given the myriad of available distributions, it is beyond the scope of this guide to cover packaging and installation for every distro</li>
+<li>This guide tries to be as agnostic as possible, but it mainly assumes you are running Debian or one of its derivatives
+<ul>
+<li>You may need to search for equivalent dependencies</li>
+<li>If you dislike AppImages there are some suggested alternative guides to follow</li>
+<li>You might need to seek out how to build a package for your package manager</li>
+</ul>
+</li>
+<li><em>It is not required</em> that you package and install Allocate, but it is generally more convenient
+<ul>
+<li>It is possible to copy the bundle to another location in your computer and run Allocate from the folder</li>
+<li>There is a sample <a href="/docs/installation/#desktop-integration">.desktop file</a> you can use to run Allocate from your launcher</li>
+</ul>
+</li>
+</ul>
+<h3 id="android">Android</h3>
+<ul>
+<li>No extra packaging is required</li>
+<li>The apk will be located at: allocate/build/app/outputs/bundle/release/allocate.apk</li>
+<li>Proceed to <a href="/docs/installation/#android-1">installing</a></li>
+</ul>
+<h3 id="ios">iOS</h3>
+<ul>
+<li>Open the XCode project:
+<ul>
+<li>Open terminal.app and navigate to the allocate folder</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> path-to-allocate
+</span></span><span class="line"><span class="cl">open ios/Runner.xcworkspace
+</span></span></code></pre></div><ul>
+<li>If you do not have a code-signing identity, <a href="https://developer.apple.com/documentation/xcode/sharing-your-teams-signing-certificates" target="_blank">create one</a>.</li>
+<li>Ensure the certificate is active:
+<ul>
+<li>From the Finder Bar:
+<ul>
+<li>XCode:
+<ul>
+<li>Preferences&hellip;
+<ul>
+<li>Accounts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the certificate is not active, select <em>Manage Certificates&hellip;</em> and generate a new certificate</li>
+</ul>
+</li>
+</ul>
+<h4 id="build-settings">Build Settings</h4>
+<ul>
+<li>Select Runner from the left navigator drawer</li>
+<li>Select the Runner Project and ensure the iOS Deployment target is set to iOS 12.0 or greater</li>
+<li>Select the Runner Target:
+<ul>
+<li>In the General tab, ensure the minimum deployment is set to iOS 12.0 or greater
+<ul>
+<li>Verify the identity is as follows:
+<ul>
+<li>App Category: Productivity</li>
+<li>Display Name: Allocate</li>
+<li>bundle identifier: com.jordan.allocate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="signing">Signing</h4>
+<ul>
+<li>In the Signing &amp; Capabilities tab, set &ldquo;Automatically manage signing&rdquo;
+<ul>
+<li>Your team should be your personal team</li>
+<li>Verify the bundle identifier is com.jordan.allocate</li>
+</ul>
+</li>
+</ul>
+<h4 id="packaging-the-ipa">Packaging the IPA</h4>
+<ul>
+<li>
+<p>From the Finder bar:</p>
+<ul>
+<li>Product:
+<ul>
+<li>Clean Build Folder&hellip;</li>
+</ul>
+</li>
+<li>Product:
+<ul>
+<li>Build For
+<ul>
+<li>Running</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When the project has finished building:</p>
+<ul>
+<li>(Finder Bar) Product:
+<ul>
+<li>Show Build Folder in Finder</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>From the Build folder:</p>
+<ul>
+<li>Navigate to:</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>Products/Release-iphoneos
+</code></pre><ul>
+<li>
+<p>Copy Runner.app to another location on your Mac (eg. your home folder, Documents, etc.)</p>
+</li>
+<li>
+<p>Open a finder window and navigate to where you copied Runner.app</p>
+</li>
+<li>
+<p>Make a folder called &ldquo;Payload&rdquo; (case-sensitive)</p>
+</li>
+<li>
+<p>Place Runner.app within the newly created &ldquo;Payload&rdquo; folder</p>
+</li>
+<li>
+<p>Right-click &ldquo;Payload&rdquo; (or highlight and open the context menu) and compress it to a .zip</p>
+</li>
+<li>
+<p>Rename Payload.zip to Allocate.ipa</p>
+</li>
+<li>
+<p>Proceed to <a href="/docs/installation/#ios-1">installing</a></p>
+</li>
+</ul>
+<h3 id="macos">MacOS</h3>
+<ul>
+<li>Open the XCode project:
+<ul>
+<li>Open terminal.app and navigate to the allocate folder</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> path-to-allocate
+</span></span><span class="line"><span class="cl">open macos/Runner.xcworkspace
+</span></span></code></pre></div><ul>
+<li>If you do not have a code-signing identity, <a href="https://developer.apple.com/documentation/xcode/sharing-your-teams-signing-certificates" target="_blank">create one</a>.</li>
+<li>Ensure the certificate is active:
+<ul>
+<li>XCode:
+<ul>
+<li>Preferences&hellip;
+<ul>
+<li>Accounts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the certificate is not active, select <em>Manage Certificates&hellip;</em> and generate a new certificate</li>
+</ul>
+</li>
+</ul>
+<h4 id="build-settings-1">Build Settings</h4>
+<ul>
+<li>
+<p>Select Runner from the left navigator drawer</p>
+</li>
+<li>
+<p>Select the Runner Project:</p>
+<ul>
+<li>Select the info tab, ensure the minimum MacOS target is set to MacOS 10.15 or greater</li>
+<li>Select the Build Settings tab:
+<ul>
+<li>In Build Options, set User Script Sandboxing to NO</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Select the Runner target:</p>
+<ul>
+<li>In the general tab, ensure the minimum MacOS target is set to MacOS 10.15 or greater</li>
+<li>Verify the identity is as follows:
+<ul>
+<li>App Category: Productivity</li>
+<li>Display Name: Allocate</li>
+<li>bundle identifier: com.jordan.allocate</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="signing-1">Signing</h4>
+<ul>
+<li>In the Signing &amp; Capabilities tab, set Signing (Release) to &ldquo;Automatically manage signing&rdquo;
+<ul>
+<li>Your team should be your personal team</li>
+<li>Verify the bundle identifier is com.jordan.allocate</li>
+<li>Set the Signing Certificate to Development</li>
+</ul>
+</li>
+</ul>
+<h4 id="packaging-the-appbundle">Packaging the AppBundle</h4>
+<ul>
+<li>From the Finder bar:
+<ul>
+<li>
+<p>Product:</p>
+<ul>
+<li>Scheme:
+<ul>
+<li>Edit Scheme:</li>
+</ul>
+</li>
+<li>Select the Run tab and set the following:
+<ul>
+<li>Build Configuration: Release</li>
+<li>Executable: Allocate.app</li>
+<li>Turn off Debug executable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Product:</p>
+<ul>
+<li>Clean Build Folder&hellip;</li>
+</ul>
+</li>
+<li>
+<p>Product:</p>
+<ul>
+<li>Build For
+<ul>
+<li>Running</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When the project has finished building:</p>
+<ul>
+<li>Product:
+<ul>
+<li>Show Build Folder in Finder</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Allocate.app will be located in:</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>  Products/Release/
+</code></pre><ul>
+<li>
+<p>At this point, you could package Allocate.app into a .dmg using Disk Utility or <a href="https://www.npmjs.com/package/appdmg" target="_blank">an alternative</a></p>
+</li>
+<li>
+<p>This is not necessary for <a href="/docs/installation/#macos-1">installation</a> or distribution; you can freely send Allocate.app to whomever you wish</p>
+</li>
+<li>
+<p>Proceed to <a href="/docs/installation/#macos-1">installation</a></p>
+</li>
+</ul>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>Download and install <a href="https://jrsoftware.org/isdl.php#stable" target="_blank">inno setup</a></li>
+<li>The executable, data, and most required .dll files will be located at:</li>
+</ul>
+<pre tabindex="0"><code>allocate\build\windows\runner\Release
+</code></pre><ul>
+<li>Follow this <a href="https://medium.com/@fluttergems/packaging-and-distributing-flutter-desktop-apps-the-missing-guide-part-2-windows-0b468d5e9e70" target="_blank">guide</a>:
+<ul>
+<li>Ignore step 2; the project has already been built</li>
+<li>You do not need to add a license.txt</li>
+<li>Licences are accessible via the <a href="//localhost:1313/docs/user-settings/#about">settings screen</a></li>
+<li>Continue up to step 6 to finish installing Allocate</li>
+</ul>
+</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>The Allocate binary will be located at:</li>
+</ul>
+<pre tabindex="0"><code>allocate/build/linux/x64/release/bundle
+</code></pre><ul>
+<li>Depending on what system libraries you already have installed, you might require to install a few dependencies</li>
+<li>Determine what these are by running the following:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ldd build/linux/x64/release/bundle/allocate
+</span></span></code></pre></div><p><strong>or</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> build/linux/x64/release/bundle/
+</span></span><span class="line"><span class="cl">ldd allocate
+</span></span></code></pre></div><ul>
+<li>If you are missing any of the required libraries, install them via your your package manager</li>
+</ul>
+<h4 id="packaging-1">Packaging</h4>
+<h5 id="linux-dependencies">Linux-Dependencies</h5>
+<p>Allocate relies on the following external dependencies:</p>
+<pre tabindex="0"><code># These are for debian - they may be named differently in your distribution
+- libgtk-3-0
+- libayatana-appindicator3-1
+- libc6-i386|libc6
+- libcap2
+- libgcrypt20
+- libglib2.0-dev
+- libjpeg-turbo8
+- liblz4-1
+- liblzma5
+- libstdc++6
+- libzstd1
+</code></pre><ul>
+<li>If you know how to package for your distribution, feel free to skip this section (and the <a href="/docs/installation/#linux-1">install</a> instructions)
+<ul>
+<li>Icon assets are all located in the assets folder for you to use as you see fit</li>
+<li>Alternatively, <a href="https://medium.com/@fluttergems/packaging-and-distributing-flutter-desktop-apps-the-missing-guide-part-3-linux-24ef8d30a5b4">this guide</a> will show you how to build .deb and .rpm builds using <a href="https://pub.dev/packages/flutter_distributor" target="_blank">flutter_distributor</a>
+<ul>
+<li>If you use <a href="https://pub.dev/packages/flutter_distributor" target="_blank">flutter_distributor</a> you will need to add the following:
+<ul>
+<li>build-args to your distribute_options.yaml</li>
+<li><a href="/docs/installation/#linux-dependencies">dependencies</a> to your make_config.yaml</li>
+<li>assets/allocatelogo.png for your application icon <em>(recommended)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Online build args:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">build_args</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dart-define</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SUPABASE_URL</span><span class="p">:</span><span class="w"> </span><span class="l">your-supabase-url-here</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">SUPABASE_ANNON_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">your-annon-key</span><span class="w">
+</span></span></span></code></pre></div><p><strong>Offline build args:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">build_args</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dart-define</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">OFFLINE</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>
+<p>Otherwise, these instructions will walk you through building an <a href="https://appimage.org/" target="_blank">AppImage</a></p>
+<ul>
+<li>Note: The AppImage binary will be significantly larger than packages built for your distribution</li>
+<li>This is due to the nature of AppImages, which include all shared library dependencies within the package</li>
+</ul>
+</li>
+<li>
+<p>Referring to <a href="https://appimage-builder.readthedocs.io/en/latest/examples/flutter.html" target="_blank">this guide</a>:</p>
+<ul>
+<li>Install <a href="https://appimage-builder.readthedocs.io/en/latest/intro/install.html#appimage" target="_blank">appimage-builder</a>
+<ul>
+<li>Using the AppImage is recommended</li>
+<li>Moving the executable to a directory on your <code>$PATH</code> is also recommended to be able to execute via the command line</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Run the following commands <em>(from the allocate directory)</em>:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cp build/linux/x64/release/bundle AppDir
+</span></span><span class="line"><span class="cl">appimage-builder --generate
+</span></span></code></pre></div><ul>
+<li>Provide the following Basic Information:</li>
+</ul>
+<pre tabindex="0"><code>Basic Information:
+? ID [Eg: com.example.app] : com.jordan.allocate
+? Application Name : Allocate
+? Icon : Allocate
+? Version : latest
+? Executable path relative to AppDir [usr/bin/app] : allocate
+? Arguments [Default: $@] : $@
+? Update Information [Default: guess] : guess
+? Architecture :  amd64
+</code></pre><ul>
+<li>Open the newly created AppImageBuilder.yml recipe and add the following:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="c"># This should be generated</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">rm -rf AppDir || true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">cp -r build/linux/x64/release/bundle AppDir</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">cp assets/allocatelogo256.png AppDir/usr/share/icons/hicolor/256x256/apps/Allocate.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AppDir</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">./AppDir</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">app_info</span><span class="p">:</span><span class="w"> </span><span class="c"># This should mostly be generated provided you included the Basic Information</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">com.jordan.allocate </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Allocate</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">Allocate</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">verion</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">exec</span><span class="p">:</span><span class="w"> </span><span class="l">allocate</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">exec_args</span><span class="p">:</span><span class="w"> </span>@<span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">apt</span><span class="p">:</span><span class="w">  </span><span class="c"># This should be your primary package manager, apt, pacman, etc.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">...</span><span class="w"> </span><span class="c"># This information should mostly be generated and not need modification</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">include</span><span class="p">:</span><span class="w">   </span><span class="c"># These might be named differently depending on your distribution</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libgtk-3-0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libayatana-appindicator3-1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libc6-i386|libc6</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libcap2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libgcrypt20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libglib2.0-dev</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libjpeg-turbo8</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">liblz4-1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">liblzma5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libstdc++6</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">libzstd1</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>Finally, run the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">appimage-builder --skip-test --recipe AppImageBuilder.yml 
+</span></span></code></pre></div><p><em>(Docker and a suite of images are required to run the test step)</em></p>
+<ul>
+<li>In the allocate directory, you should find the following file:</li>
+</ul>
+<pre tabindex="0"><code>Allocate-latest-&lt;arch&gt;.AppImage
+</code></pre><p><em>(&lt;arch&gt; will be whichever architecture target you built for, eg. x86_64/amd64/etc.)</em></p>
+<ul>
+<li>Proceed to <a href="/docs/installation/#linux-1">installing</a></li>
+</ul>
+<h2 id="installing">Installing</h2>
+<h3 id="android-1">Android</h3>
+<p>Installing on an Android device is fairly straightforward.</p>
+<ul>
+<li>
+<p>Connect your Android device via USB</p>
+</li>
+<li>
+<p>Install via flutter <em>(developer mode may be required)</em>:</p>
+<ul>
+<li>Open a command promt and navigate to the allocate folder and execute:</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">flutter install
+</span></span></code></pre></div><ul>
+<li>Install via sideloading:
+<ul>
+<li>Copy allocate.apk to your device from:</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>allocate/build/app/outputs/bundle/release/
+</code></pre><ul>
+<li>Allow installing apps from untrusted developers in settings</li>
+<li>Install the apk using your file manager</li>
+</ul>
+<h3 id="ios-1">iOS</h3>
+<p><em>If your device is jailbroken, just install the ipa via your preferred method</em></p>
+<p>Installing on an iOS device <em>(without a paid account)</em> is more complicated. While it is possible to install your locally-signed .ipa to your device with Developer mode activated, the app will need to be resigned every 7 days. It is recommended to use a sideloading alternative such as <a href="https://altstore.io/" target="_blank">AltStore</a>.</p>
+<ul>
+<li>
+<p><a href="https://faq.altstore.io/" target="_blank">Install AltStore and AltServer</a></p>
+</li>
+<li>
+<p>Copy Allocate.ipa to your device (iCloud/AirDrop/etc.)</p>
+</li>
+<li>
+<p>Open AltStore on your iOS device:</p>
+<ul>
+<li>My Apps tab:
+<ul>
+<li>Tap the + icon</li>
+<li>Navigate to Allocate.ipa in Files</li>
+<li>Wait for AltStore to finish installing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>On first open, the app will request network access and permission to send notifications</p>
+</li>
+<li>
+<p>Network access is required for Allocate to have online functionality</p>
+</li>
+<li>
+<p>If you wish to receive notifications, allow them accordingly</p>
+</li>
+</ul>
+<h3 id="macos-1">MacOS</h3>
+<ul>
+<li>Copy Allocate.app from the <a href="/docs/installation/#packaging-the-appbundle">build folder</a> to your Applications folder</li>
+<li>Double click the icon to open Allocate:
+<ul>
+<li>MacOS will prevent you from opening the app on first open if you do not notarize the app
+<ul>
+<li>Notarizing requires a paid developer account</li>
+</ul>
+</li>
+<li>Dismiss the malicious software alert</li>
+</ul>
+</li>
+<li>Right-click/Highlight and open the context menu, select open
+<ul>
+<li>Select open on the malicious software alert</li>
+<li>This only needs to be done once; opening the app again will behave like any other MacOS application</li>
+</ul>
+</li>
+<li>Allow access to the Documents folder (for the local database)</li>
+<li>If Allocate requests access to network, allow it to let Allocate connect to the internet</li>
+<li>Allow Allocate to send notifications if you wish to receive notifications</li>
+</ul>
+<h3 id="linux-1">Linux</h3>
+<p>If you have bundled your application using a method other than <a href="https://appimage.org/" target="_blank">AppImage</a>, these instructions will not apply.</p>
+<ul>
+<li>Add execute permissions to the AppImage:</li>
+</ul>
+<pre tabindex="0"><code class="language-script" data-lang="script">chmod a+x Allocate-latest-&lt;arch&gt;.AppImage
+</code></pre><p><em>(&lt;arch&gt; will be whichever architecture target you built for, eg. x86_64/amd64/etc.)</em></p>
+<ul>
+<li>Copy the AppImage to wherever you wish, eg. $HOME/Applications/ or similar
+<ul>
+<li>You could also install to your /usr/local/bin/ and rename the package to something like &ldquo;allocate&rdquo; to run via the command line</li>
+</ul>
+</li>
+<li>Allocate can then be run by double-clicking the icon, or right-click and select run</li>
+<li>(or execute via the command line: path/to/Allocate.AppImage)</li>
+</ul>
+<h3 id="desktop-integration">Desktop Integration</h3>
+<ul>
+<li>
+<p>To access Allocate via the launcher, you will need a .Desktop file</p>
+<ul>
+<li>If you are unfamiliar with how to do this, <a href="https://github.com/TheAssassin/AppImageLauncher" target="_blank">AppImageLauncher</a> is a convenient tool</li>
+</ul>
+</li>
+<li>
+<p>Otherwise, feel free to modify and use the following:</p>
+</li>
+</ul>
+<p><strong>Allocate.desktop</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Desktop</span> <span class="nx">Entry</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Type</span><span class="p">=</span><span class="nx">Application</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Version</span><span class="p">=</span><span class="mf">1.0</span><span class="p">.</span><span class="mi">0+6</span> <span class="c"># Set the version number here</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Name</span><span class="p">=</span><span class="nx">Allocate</span>
+</span></span><span class="line"><span class="cl"><span class="nx">GenericName</span><span class="p">=</span><span class="nx">Task</span> <span class="nx">Manager</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Icon</span><span class="p">=</span><span class="nx">Allocate</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Exec</span><span class="p">=</span><span class="nx">path</span><span class="err">/</span><span class="nx">to</span><span class="err">/</span><span class="nx">Allocate</span><span class="p">.</span><span class="nx">AppImage</span> <span class="c"># Set the path to the executable here</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Categories</span><span class="p">=</span><span class="nx">Utility</span><span class="err">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Keywords</span><span class="p">=</span><span class="nx">Task</span> <span class="nx">management</span><span class="err">;</span><span class="nx">Burnout</span><span class="err">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">StartupNotify</span><span class="p">=</span><span class="kc">true</span>
+</span></span></code></pre></div><ul>
+<li>And then run this command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo cp Allocate.desktop /usr/share/applications/
+</span></span></code></pre></div><ul>
+<li>Allocate should then appear in your launcher</li>
+</ul>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+      
+    
+        
+
+        
+          
+        
+
+        
+        
+      
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="2024-05-10"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2024-05-10</time>
+
+  
+    <a id="article-prev-link" href="/docs/building-allocate/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+    <a id="article-next-link"  href="/docs/setting-up/">Next <i class="icon icon-next icon-colored"></i></a>
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#packaging">Packaging</a>
+      <ul>
+        <li><a href="#android">Android</a></li>
+        <li><a href="#ios">iOS</a></li>
+        <li><a href="#macos">MacOS</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#linux">Linux</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing">Installing</a>
+      <ul>
+        <li><a href="#android-1">Android</a></li>
+        <li><a href="#ios-1">iOS</a></li>
+        <li><a href="#macos-1">MacOS</a></li>
+        <li><a href="#linux-1">Linux</a></li>
+        <li><a href="#desktop-integration">Desktop Integration</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+    <a href="https://jordan-clayton.github.io" target="_blank">
+      <i class="icon icon-copyright"></i> 2024 Jordan Clayton
+    </a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-fund">
+
+    
+
+    
+
+  </div>
+
+  
+  <div id="site-footer-love">
+    Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href="https://docura.github.io/" target="_blank">Docura</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+  
+  <script src="/js/component/docsearch.min.js"></script>
+  <script type="application/javascript">
+      docsearch({
+          container: '#site-header-search',
+          appId: 'CNK71ZG9VQ',
+          indexName: 'allocate-docs',
+          apiKey: '9ffd9aeab725f6394142cc30a355cb2b',
+      });
+  </script>
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2024-05-17')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>
