@@ -1,18 +1,17 @@
 ---
-baseURL: "https://jordan-clayton.github.io/allocate-docs"
 languageCode: "en-us"
 
 enableGitInfo: true
 
 module:
+  imports: 
+    - path: "github.com/docura/docura"
   mounts:
     - source: "assets"
       target: "assets"
 
     - source: "static"
       target: "assets"
-
-theme: "docura"
 
 languages:
   en:
@@ -46,7 +45,9 @@ params:
   author:
     name: "Jordan Clayton"
     url: "https://jordan-clayton.github.io"
-
+  
+  custom_css:
+    - "css/custom.css"
 
   themeColors:
       light: "#FFFFFF"
@@ -66,7 +67,6 @@ params:
       appID: "CNK71ZG9VQ"
       indexName: "allocate-docs"
       apiKey: "9ffd9aeab725f6394142cc30a355cb2b"
-
 
 # for Hugo-Algolia
 algolia:
