@@ -1,7 +1,10 @@
 ---
 languageCode: "en-us"
-relativeURLs: true
 enableGitInfo: true
+
+baseURL: "/"
+
+publishDir: "docs"
 
 module:
   imports: 
@@ -22,8 +25,6 @@ languages:
     weight: 1
     params:
       description: "Neurodivergent-Friendly Task Management"
-
-publishDir: "docs"
 
 menu:
   main:
