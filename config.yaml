@@ -1,6 +1,6 @@
 ---
 languageCode: "en-us"
-reulativeUrls: true
+relativeURLs: true
 enableGitInfo: true
 
 module:
