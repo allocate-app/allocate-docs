@@ -49,6 +49,10 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Update Modules
+        run: hugo mod init && hugo mod get -u
+      - name: Print Hugo Modules
+        run: hugo mod graph
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -56,8 +60,6 @@ jobs:
           HUGO_ENV: production
           TZ: America/Los_Angeles
         run: | 
-          hugo mod init &&
-          hugo mod get -u &&
           hugo \
             --gc \
             --minify \
