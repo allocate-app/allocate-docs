@@ -2,10 +2,6 @@
 languageCode: "en-us"
 enableGitInfo: true
 
-baseURL: "/"
-
-publishDir: "docs"
-
 module:
   imports: 
     - path: "github.com/docura/docura"
@@ -36,7 +32,7 @@ menu:
       pre: "<i class='icon icon-home'></i>" 
       weight: 1
 
-    - url: "docs/"
+    - url: "/docs"
       name: "Documentation"
       identifier: "docs"
       pre: "<i class='icon icon-book'></i>" 
