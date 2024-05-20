@@ -61,15 +61,15 @@ params:
     en:
     # For docura
       container: "#site-header-search"
-      appID: "CNK71ZG9VQ"
-      indexName: "allocate-docs"
-      apiKey: "9ffd9aeab725f6394142cc30a355cb2b"
+      appID: "58OMY730QV"
+      indexName: "allocate-appio"
+      apiKey: "7870a01eabdf67961bef7690863c40b2"
 
 # for Hugo-Algolia
 algolia:
-  index: "allocate-docs"
-  key: "9ffd9aeab725f6394142cc30a355cb2b"
-  appID: "CNK71ZG9VQ"
+  index: "allocate-appio"
+  key: "7870a01eabdf67961bef7690863c40b2"
+  appID: "58OMY730QV"
 
 markup:
   highlight:
